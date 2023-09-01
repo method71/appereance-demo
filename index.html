@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-roundness="smooth">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="page">
+		<form class="block" name="appearance">
+			<h1 class="title">Appearance settings</h1>
+
+			<div class="range">
+				<label class="label">Hue</label>
+				<div class="range__holder">    
+					<input class="range__slider" id="hue" type="range" max="360">
+				</div>
+			</div>
+
+			<div class="group">
+				<label class="label">Theme</label>
+				<label class="option">
+					<input type="radio" name="theme" value="light">
+					Light
+				</label>
+				<label class="option">
+					<input type="radio" name="theme" value="dark">
+					Dark
+				</label>
+			</div>
+
+			<div class="group">
+				<label class="label">Corner radius</label>
+				<label class="option">
+					<input type="radio" name="roundness" value="sharp">
+					Sharp
+				</label>
+				<label class="option">
+					<input type="radio" name="roundness" value="smooth">
+					Smooth
+				</label>
+				<label class="option">
+					<input type="radio" name="roundness" value="round">
+					Round
+				</label>
+			</div>
+
+			<button class="button" type="reset">Reset</button>
+		</form>
+
+		<div class="surfaces">
+			<div class="surfaces__item surface surface--base">action</div>
+			<div class="surfaces__item surface surface--raised">action</div>
+			<div class="surfaces__item surface surface--primary">action</div>
+		</div>
+
+		<div class="block">
+			<p><span class="text-weak">Text colors test:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="text-strong">Quam similique veritatis soluta ipsum.</span> Necessitatibus corrupti magni voluptatum cum totam quos, expedita quae incidunt reiciendis, vero, deleniti repellendus cupiditate quod saepe.</p>
+		</div>
+	</div>
+	
+	<script src="script.js"></script>
+</body>
+</html>
